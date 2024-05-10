@@ -1,7 +1,7 @@
 import NextAuth, { AuthOptions } from 'next-auth'
-// import GithubProvider from 'next-auth/providers/github'
+import GithubProvider from 'next-auth/providers/github'
 import GitlabProvider from 'next-auth/providers/gitlab'
-import CredentialsProvider from 'next-auth/providers/credentials'
+// import CredentialsProvider from 'next-auth/providers/credentials'
 import { DrizzleAdapter } from '@auth/drizzle-adapter'
 import { db } from '@/server/db/db'
 
@@ -9,10 +9,12 @@ export const authOptions: AuthOptions = {
   adapter: DrizzleAdapter(db),
   // Configure one or more authentication providers
   providers: [
-    // GithubProvider({
-    //   clientId: process.env.GITHUB_ID!,
-    //   clientSecret: process.env.GITHUB_SECRET!
-    // }),
+    GithubProvider({
+      clientId: 'Ov23liLpAE4Exufrw6KP',
+      clientSecret: '892539ef9029d3dee66a6ba92c45e148f35865c6'
+      // clientId: process.env.GITHUB_ID!,
+      // clientSecret: process.env.GITHUB_SECRET!
+    }),
     GitlabProvider({
       clientId: 'f408d080219c1ddd3000aa8a76603d884f57a8e8a9c0deb413c18e0636bdd247',
       clientSecret: 'gloas-0c1942aaaa6a8ab0e6b3d34e92aa0a8671327144a432cd14b5dccf8fb792e564'
