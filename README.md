@@ -37,3 +37,12 @@ npx drizzle-kit push:pg
 ```bash
 npx drizzle-kit studio
 ```
+
+用户名密码方式登录url
+
+[http://localhost:3000/api/auth/signin](http://localhost:3000/api/auth/signin)
+
+Github OAuth2对接
+
+Open [https://zhuanlan.zhihu.com/p/644330358](https://zhuanlan.zhihu.com/p/644330358) with your browser to see the
+result.
