@@ -46,3 +46,18 @@ Github OAuth2对接
 
 Open [https://zhuanlan.zhihu.com/p/644330358](https://zhuanlan.zhihu.com/p/644330358) with your browser to see the
 result.
+
+Gitlab OAuth2对接
+
+![第一步](1715344906068.jpg)
+![第二部](1715345275974.jpg)
+
+在编辑详情中，要根据本地启动项目时用的访问地址是localhost还是127.0.0.1来配置，否则会重定向失败
+
+# Intercepting Routes & Parallel Routes
+
+Intercepting Routes
+
+在当前页面下打开其他页面的路由时不会跳离当前上下文
+
+
